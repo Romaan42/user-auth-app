@@ -1,12 +1,19 @@
-import UserDetail from '@/components/UserDetail'
-import React from 'react'
+import About from "./components/home/About";
+import Banner from "./components/home/Banner";
+import Notes from "./components/home/Notes";
+import SkillsSection from "./components/home/SkillsSection";
+import Teach from "./components/home/Teach";
 
-const page = () => {
+
+export default function Home() {
   return (
-    <div className='min-h-screen bg-black flex justify-center items-center'>
-      <UserDetail />
-    </div>
-  )
+    <main>
+      <Banner />
+      <About />
+      <SkillsSection />
+      <Teach />
+      <Notes />
+      <h1>welcome</h1>
+    </main>
+  );
 }
-
-export default page
